@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>      
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodeVerse - Learn to Code</title>
-<link rel="icon" type="image/png" href="asdd.jpeg">
+<link rel="icon" type="image/png" href="asas.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -155,15 +155,17 @@
     color: var(--muted);
     text-decoration: none;
     font-size: 14px;
-    font-family: 'Space Mono', monospace;
-    letter-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     transition: all 0.3s;
     position: relative;
+    cursor: pointer;
   }
   nav a::after {
     content: '';
     position: absolute;
-    bottom: -4px; left: 0;
+    bottom: -4px; right: 0;
     width: 0; height: 1px;
     background: var(--accent);
     transition: width 0.3s;
@@ -804,19 +806,19 @@
 <!-- ===== HEADER ===== -->
 <header>
   <div class="logo-area">
-    <div class="logo-img-placeholder" id="logoContainer">AG</div>
+    <div class="logo-img-placeholder" id="logoContainer">CV</div>
     <span class="logo-text">CODEVERSE</span>
   </div>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Learn</a>
-    <a href="#">Projects</a>
-    <a href="#">About</a>
+    <a href="#home">الرئيسية</a>
+    <a href="#learn">تعلم البرمجة</a>
+    <a href="javascript:void(0)" onclick="openEditorModal()">المحرر التفاعلي</a>
+    <a href="#about">عن المنصة</a>
   </nav>
 </header>
 
 <!-- ===== HERO ===== -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-badge"><span></span> INTERACTIVE LEARNING PLATFORM</div>
   <h1 class="hero-title">
     <span class="line1">LEARN</span>
@@ -829,7 +831,7 @@
 </section>
 
 <!-- ===== ORBIT SECTION ===== -->
-<section class="orbit-section">
+<section class="orbit-section" id="learn">
   <div class="section-label">— Choose Your Language —</div>
   <h2 class="section-title">اختر اللغة وابدأ التعلم</h2>
 
@@ -853,44 +855,44 @@
 
     <!-- Center Editor -->
     <div class="center-editor" onclick="openEditorModal()">
-      <div class="editor-icon">??</div>
+      <div class="editor-icon">⎚</div>
       <div class="editor-label">CODE<br>EDITOR</div>
     </div>
 
     <!-- Language Orbs -->
     <div class="lang-orb orb-html" onclick="openModal('html')">
-      <div class="orb-emoji">??</div>
+      <div class="orb-emoji">⌨</div>
       <div class="orb-name">HTML</div>
     </div>
     <div class="lang-orb orb-css" onclick="openModal('css')">
-      <div class="orb-emoji">??</div>
+      <div class="orb-emoji">✎</div>
       <div class="orb-name">CSS</div>
     </div>
     <div class="lang-orb orb-js" onclick="openModal('js')">
-      <div class="orb-emoji">?</div>
+      <div class="orb-emoji">⚡</div>
       <div class="orb-name">JS</div>
     </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer>
+<footer id="about">
   <span class="footer-logo">CODEVERSE</span>
   <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Your gateway to the world of web development</p>
 
   <div class="designer-card">
-    <div class="designer-avatar">??‍??</div>
+    <div class="designer-avatar">AG</div>
     <div class="designer-info">
       <div class="designer-name">Ahmed Ghita</div>
       <div class="designer-role">Website Designer & Developer</div>
     </div>
-    <a class="whatsapp-btn" href="https://wa.me/201063840985" target="_blank">
+    <a class="whatsapp-btn" href="https://wa.me/201063840895" target="_blank">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       +20 106 384 0985
     </a>
   </div>
 
-  <p class="copyright">© 2024 CodeVerse — Designed by Ahmed Ghita — All Rights Reserved</p>
+  <p class="copyright">© 2026 CodeVerse — Designed by Ahmed Ghita — All Rights Reserved</p>
 </footer>
 
 <!-- ===== CODES MODAL ===== -->
@@ -898,7 +900,7 @@
   <div class="modal">
     <div class="modal-header">
       <div class="modal-title" id="modalTitle">HTML Codes</div>
-      <button class="modal-close" onclick="closeModal()">?</button>
+      <button class="modal-close" onclick="closeModal()">×</button>
     </div>
     <div class="modal-search">
       <input type="text" id="searchInput" placeholder="??  ابحث عن كود..." oninput="filterCodes()">
@@ -920,13 +922,13 @@
   <div class="editor-modal">
     <div class="modal-header">
       <div class="modal-title">?? Code Editor</div>
-      <button class="modal-close" onclick="closeEditorModal()">?</button>
+      <button class="modal-close" onclick="closeEditorModal()">×</button>
     </div>
     <div class="editor-tabs">
       <button class="editor-tab html-tab active" onclick="switchTab('html', this)">HTML</button>
       <button class="editor-tab css-tab" onclick="switchTab('css', this)">CSS</button>
       <button class="editor-tab js-tab" onclick="switchTab('js', this)">JS</button>
-      <button class="run-btn" onclick="runCode()">? RUN</button>
+      <button class="run-btn" onclick="runCode()">✓ RUN</button>
     </div>
     <div class="editor-area">
       <textarea class="code-editor" id="codeEditorArea" spellcheck="false"><!-- اكتب كود HTML هنا -->
